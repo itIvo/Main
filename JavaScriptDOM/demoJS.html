@@ -4,17 +4,33 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    
 </head>
-<body>
+<body id="body">    
     <div id="content">
-        <label for="number">Number</label>
-        <input type="text" name="number" id="entered" />
-        <button onclick="go()">Press me !</button>
+        <b>Background color :</b>
+       <button id="red" onclick="red()">red</button>
+       <button id="blue" onclick="blue()">blue</button>
+       <button id="white" onclick="white()">white</button>
+       <button id="green" onclick="green()">green</button>
+       <p id="cur-color">Current color is : </p>
     </div>
-    <script>        
-        function go() {
-            var written = document.getElementById("entered")
-            alert("The value you entered was :  " + written.value)
+    <script>   
+        function red() {
+            document.body.style.backgroundColor = "red";
+            document.getElementById("cur-color").innerHTML = 'Current color is : red'
+        }
+        function blue() {
+            document.body.style.backgroundColor = "blue";
+            document.getElementById("cur-color").innerHTML = 'Current color is : blue'
+        }
+        function white() {
+            document.body.style.backgroundColor = "white";
+            document.getElementById("cur-color").innerHTML = 'Current color is : white'
+        }
+        function green() {
+            document.body.style.backgroundColor = "green";
+            document.getElementById("cur-color").innerHTML = 'Current color is : green'
         }
     </script>
 </body>
