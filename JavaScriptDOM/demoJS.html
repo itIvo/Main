@@ -8,13 +8,13 @@
 <body>
     <div id="content">
         <label for="number">Number</label>
-        <input type="text" name="number" value=" " id="text-entered" />
+        <input type="text" name="number" id="entered" />
         <button onclick="go()">Press me !</button>
     </div>
-    <script>
-        var n = document.getElementById("#text-entered")
+    <script>        
         function go() {
-            alert(n)
+            var written = document.getElementById("entered")
+            alert("The value you entered was :  " + written.value)
         }
     </script>
 </body>
