@@ -3,12 +3,16 @@
     <title></title>
 </head>
 <body>
-    <button onclick="btnMakeNew()">Press me !</button>
-    <div id="content"></div>
+    <button onmousedown="ready()">Press me !</button>
+    <div id="content">
+    </div>
     <script>
-       function btnMakeNew(){
-           var btn = document.createElement('button')
-           document.getElementById('content').appendChild(btn)
+        function ready() {
+            var para = document.createElement("p");
+            para.className='paragraph'
+            document.getElementById('content').appendChild(para);
+            document.querySelector('paragraph').innerHTML = 'hello'
+
         }
     </script>
 </body>
