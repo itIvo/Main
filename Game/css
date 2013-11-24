@@ -1,0 +1,2 @@
+#wrapper(border: 1px solid black; border-radius: 9 ; width: 400; height: 400);
+#square(border: 1px solid black; border-radius: 9 ; widht: 30 ; height: 30)
