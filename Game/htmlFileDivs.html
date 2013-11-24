@@ -4,10 +4,40 @@
 <head>
     <meta charset="utf-8" />
     <title>Game</title>
+    <link rel="stylesheet" href="style/css.css" type="text/css" />
 </head>
 <body>
     <div id="wrapper">
-        <div id="square"></div>
+        <div id="square"><img src="images/spaceship.png" id="img"/></div>
     </div>
+    <a id="down" onkeypress="down()">Down</a>
+    <button id="up" onclick="up()">Up</button>
+    <br />
+    <button id="left" onclick="left()">Left</button>
+    <button id="right" onclick="right()">Right</button>   
+    
+    <script>
+        var y = 0
+        var x = 0
+        
+        function down() {       
+            document.getElementById('square').style.marginTop = y + 'px';
+            y += 10
+            
+        }
+        function up() {
+            document.getElementById('square').style.marginTop = y + 'px';
+            y = y - 10
+        }
+        function right() {
+            document.getElementById('square').style.marginLeft = x + 'px';
+            x += 10
+        }
+        function left() {
+            document.getElementById('square').style.marginLeft = x + 'px';
+            x = x - 10
+        }
+        
+    </script>
 </body>
 </html>

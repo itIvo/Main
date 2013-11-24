@@ -1,0 +1,15 @@
+#wrapper {
+    border: 1px solid black;
+    border-radius: 9px;
+    width: 400px;
+    height: 400px;
+}
+#square{
+    width: 30px ; 
+    height: 30px;
+      
+ }
+    #square > #img {
+        width: 90px ; 
+        height: 90px;
+    }
